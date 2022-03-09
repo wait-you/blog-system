@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wenhe9.mapper.CommentMapper">
+    <select id="queryCommentsByIdWithPage" parameterType="int" resultType="comment">
+        select * from t_comment where article_id = #{id} order by id desc
+    </select>
+
+    <select id="queryNewComments" resultType="comment">
+        select * from t_comment order by id desc
+    </select>
+
+    <insert id="publicComment" parameterType="comment">
+        insert into t_comment(article_id, created, author, ip, content) values(#{articleId}, #{created}, #{author}, #{ip}, #{content})
+    </insert>
+    
+    <delete id="deleteCommentById" parameterType="int">
+        delete from t_comment where article_id = #{aid}
+    </delete>
+
+    <select id="countComment" resultType="int">
+        select count(*) from t_comment;
+    </select>
+</mapper>

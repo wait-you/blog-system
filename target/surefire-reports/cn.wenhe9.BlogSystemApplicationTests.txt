@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: cn.wenhe9.BlogSystemApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.709 s - in cn.wenhe9.BlogSystemApplicationTests
