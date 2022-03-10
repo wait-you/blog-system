@@ -2,6 +2,8 @@
 
 #### 介绍
 传智播客 springboot个人博客 thymeleaf
+#### 演示地址
+http://www.wenhe9.cn:9999/
 
 #### 软件架构
 软件架构说明
