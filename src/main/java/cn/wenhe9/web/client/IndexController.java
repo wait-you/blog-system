@@ -34,7 +34,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(HttpServletRequest request){
-        return this.index(request, 1, 5);
+        return "forward:/page/1";
     }
 
     @GetMapping("/page/{p}")
